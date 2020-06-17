@@ -15,3 +15,45 @@ Rear Camera  | 12 MP, f/1.8, 1.25µm, PDAF
 Front Camera  |  8 MP, f/2.0, 1.12µm
 
 ![Xiaomi Redmi 7](https://raw.githubusercontent.com/hadaddarajat/Assets/master/Images/Devices/Redmi%207.webp "Xiaomi Redmi 7")
+
+## Features
+
+Works:
+* ADB
+* Decryption of /data
+* Screen brightness settings
+* MTP
+* Flashing
+* Backup/Restore
+* USB OTG
+* Vibration
+
+## Sync and Build manually
+---------------
+
+To get started with building SkyHawk Recovery, you'll need to get
+familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
+
+To initialize your local repository using the minimal-manifest-twrp omni trees to build SkyHawk Recovery, use a command like this:
+
+```bash
+repo init --depth=1 -u git://github.com/SKYHAWK-Recovery-Project/platform_manifest_twrp_omni.git -b android-9.0
+repo sync -j$(nproc --all) --force-sync
+```
+
+## Add these projects to .repo/manifests/shrp.xml
+```xml
+<project path="SHRP-Devices/android_device_xiaomi_onclite" remote="github" revision="android-10.0" />
+```
+
+## Then to build
+```bash
+     cd <source-dir>
+     . build/envsetup.sh && export ALLOW_MISSING_DEPENDENCIES=true 
+     lunch omni_onclite-eng && mka recoveryimage
+```
+
+## To test it
+```
+fastboot flash recovery out/target/product/onclite/recovery.img
+```
