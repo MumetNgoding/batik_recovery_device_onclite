@@ -42,6 +42,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.treble.enabled=true \
+    ro.vendor.build.security_patch=2099-12-31 \
     persist.sys.isUsbOtgEnabled=true
 
 PRODUCT_COPY_FILES += \
