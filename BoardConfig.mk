@@ -60,6 +60,9 @@ BOARD_BOOTIMG_HEADER_VERSION := 1
 
 BOARD_INCLUDE_RECOVERY_DTBO  := true
 
+TARGET_PREBUILT_KERNEL       := $(LOCAL_PATH)/prebuilt/Image.gz-dtb
+BOARD_PREBUILT_DTBOIMAGE     := $(LOCAL_PATH)/prebuilt/dtbo.img
+
 BOARD_MKBOOTIMG_ARGS := \
     --ramdisk_offset $(BOARD_RAMDISK_OFFSET) \
     --tags_offset $(BOARD_KERNEL_TAGS_OFFSET) \
