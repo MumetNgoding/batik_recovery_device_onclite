@@ -44,7 +44,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.treble.enabled=true \
     ro.vendor.build.security_patch=2099-12-31 \
-    persist.sys.isUsbOtgEnabled=true
+    persist.sys.isUsbOtgEnabled=true \
+    ro.hardware.keystore=msm8953 \
+    ro.hardware.keystore_desede=true
 
 PRODUCT_COPY_FILES += \
     system/timezone/output_data/iana/tzdata:recovery/root/system_root/system/usr/share/zoneinfo/tzdata
