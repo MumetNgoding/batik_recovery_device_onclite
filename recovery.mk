@@ -1,4 +1,4 @@
-# Copyright 2019 SKYHAWK RECOVERY PROJECT
+# Copyright 2019 BATIK RECOVERY PROJECT
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,20 +13,19 @@
 # limitations under the License.
 #
 
-SHRP_PATH := device/xiaomi/onclite
-SHRP_MAINTAINER := hadaddarajat
-SHRP_DEVICE_CODE := onclite
-SHRP_OFFICIAL := true
-SHRP_EDL_MODE := 1
-SHRP_EXTERNAL := /external_sd
-SHRP_INTERNAL := /sdcard
-SHRP_OTG := /usb-otg
-SHRP_FLASH := 1
-SHRP_FLASH_MAX_BRIGHTNESS := 100
-SHRP_REC := /dev/block/bootdevice/by-name/recovery
-SHRP_REC_TYPE := SAR
-SHRP_DEVICE_TYPE := A_Only
-SHRP_STATUSBAR_RIGHT_PADDING := 48
-SHRP_STATUSBAR_LEFT_PADDING := 48
-SHRP_EXPRESS := true
-SHRP_NOTCH := true
+BATIK_PATH := device/xiaomi/onclite
+BATIK_MAINTAINER := BryanHafidz
+BATIK_DEVICE_CODE := onclite
+BATIK_EDL_MODE := 1
+BATIK_EXTERNAL := /external_sd
+BATIK_INTERNAL := /sdcard
+BATIK_OTG := /usb-otg
+BATIK_FLASH := 1
+BATIK_FLASH_MAX_BRIGHTNESS := 100
+BATIK_REC := /dev/block/bootdevice/by-name/recovery
+BATIK_REC_TYPE := SAR
+BATIK_DEVICE_TYPE := A_Only
+BATIK_STATUSBAR_RIGHT_PADDING := 48
+BATIK_STATUSBAR_LEFT_PADDING := 48
+BATIK_EXPRESS := true
+BATIK_NOTCH := true
