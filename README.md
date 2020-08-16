@@ -37,7 +37,7 @@ familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 To initialize your local repository using the minimal-manifest-twrp omni trees to build SkyHawk Recovery, use a command like this:
 
 ```bash
-repo init --depth=1 -u git://github.com/SKYHAWK-Recovery-Project/platform_manifest_twrp_omni.git -b android-9.0
+repo init -u git://github.com/BatikRecovery/br_manifest.git -b android-9.0
 repo sync -j$(nproc --all) --force-sync
 ```
 
